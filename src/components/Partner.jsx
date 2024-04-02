@@ -3,10 +3,10 @@ const Partner = () => {
   const filteredImages = Object.keys(images).filter((key) =>
     key.startsWith("s")
   );
-  console.log(Object.keys(images));
+
   return (
     <section id="partner" className="text-gray-600 body-font">
-      <h2 className="py-24 font-semibold text-center text-white uppercase">
+      <h2 className="py-24 font-semibold text-center text-white text-3xl uppercase">
         Ils nous ont fait confiance !
       </h2>
       <div className="container px-5 mx-auto">
@@ -20,7 +20,7 @@ const Partner = () => {
               <div className="h-full text-center">
                 <img
                   alt={`Partner-${index + 1}`}
-                  className="inline-block object-cover object-center mb-8 md: w-50 h-50 "
+                  className="inline-block object-cover object-center mb-8 md: w-50 h-50 rounded-3xl"
                   src={images[imageName]}
                 />
               </div>

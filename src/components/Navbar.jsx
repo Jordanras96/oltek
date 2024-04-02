@@ -1,6 +1,6 @@
+import { logosub } from "@/src/assets";
 import { useCallback, useEffect, useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
-import { logosub } from "../assets";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -70,11 +70,11 @@ const Navbar = () => {
   };
 
   const navItems = [
-    { text: "Notre histoire", section: "about" },
-    { text: "Nos Valeurs", section: "features" },
-    { text: "Nos Services", section: "services" },
-    { text: "Nos Partenaires", section: "partner" },
-    { text: "la TEAM", section: "team" },
+    { text: "Histoire", section: "about" },
+    { text: "Valeurs", section: "features" },
+    { text: "Services", section: "services" },
+    { text: "Partenaires", section: "partner" },
+    { text: "TEAM", section: "team" },
     { text: "Collaborons", section: "contact" },
   ];
 

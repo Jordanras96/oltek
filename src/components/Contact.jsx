@@ -103,6 +103,7 @@ const Contact = () => {
                   id="name"
                   placeholder="Nom"
                   name="user_name"
+                  autoComplete="off"
                   value={inputs.user_name}
                   onChange={handleChange}
                   className={`w-full px-3 py-1 text-base leading-8 text-gray-700 transition-colors duration-200 ease-in-out bg-gray-100 bg-opacity-50 border border-gray-300 rounded outline-none focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 ${
@@ -126,6 +127,7 @@ const Contact = () => {
                   id="email"
                   placeholder="Email"
                   name="user_email"
+                  autoComplete="off"
                   value={inputs.user_email}
                   onChange={handleChange}
                   className={`w-full px-3 py-1 text-base leading-8 text-gray-700 transition-colors duration-200 ease-in-out bg-gray-100 bg-opacity-50 border border-gray-300 rounded outline-none focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 ${
@@ -148,6 +150,7 @@ const Contact = () => {
                   id="message"
                   placeholder="Message"
                   name="user_message"
+                  autoComplete="off"
                   value={inputs.user_message}
                   onChange={handleChange}
                   className={`w-full h-32 px-3 py-1 text-base leading-6 text-gray-700 transition-colors duration-200 ease-in-out bg-gray-100 bg-opacity-50 border border-gray-300 rounded outline-none resize-none focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 ${

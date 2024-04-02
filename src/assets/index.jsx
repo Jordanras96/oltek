@@ -7,10 +7,6 @@ import logosub from "./logosub.png";
 import nocode from "./nocode.png";
 import react from "./react.svg";
 import redaction from "./redaction.jpg";
-import tutorat from "./tutorat.jpg";
-import ui from "./ui.jpg";
-import ux from "./ux.jpg";
-import bulb from "./bulb.png";
 import s1 from "./s1.webp";
 import s10 from "./s10.png";
 import s11 from "./s11.png";
@@ -25,6 +21,9 @@ import s6 from "./s6.svg";
 import s7 from "./s7.png";
 import s8 from "./s8.png";
 import s9 from "./s9.jpg";
+import tutorat from "./tutorat.jpg";
+import ui from "./ui.jpg";
+import ux from "./ux.jpg";
 
 // Export des images
 export {
@@ -34,9 +33,6 @@ export {
   nocode,
   react,
   redaction,
-  tutorat,
-  ui,
-  ux,
   s1,
   s10,
   s11,
@@ -51,5 +47,7 @@ export {
   s7,
   s8,
   s9,
-  bulb,
+  tutorat,
+  ui,
+  ux,
 };

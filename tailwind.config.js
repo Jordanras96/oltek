@@ -1,25 +1,23 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   darkMode: ["class"],
   content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-    "node_modules/flowbite-react/lib/esm/**/*.js",
+    "./pages/**/*.{js,jsx}",
+    "./components/**/*.{js,jsx}",
+    "./app/**/*.{js,jsx}",
+    "./src/**/*.{js,jsx}",
   ],
   prefix: "",
   theme: {
     container: {
       center: true,
       padding: "2rem",
+      screens: {
+        "2xl": "1400px",
+      },
     },
     extend: {
       colors: {
-        premier: "#6171fe",
-        deuxieme: "#9f6afe",
-        troisieme: "#b79dfe",
-        highlight: "#ddd0fe",
-        light: "#fefefe",
-        dark: "#6658fe",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -60,6 +58,9 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       keyframes: {
+        gradient: {
+          to: { "background-position": "200% center" },
+        },
         "accordion-down": {
           from: { height: "0" },
           to: { height: "var(--radix-accordion-content-height)" },
@@ -74,12 +75,12 @@ export default {
         },
       },
       animation: {
+        gradient: "gradient 8s linear infinite",
         background: "background 3s ease-in-out infinite",
-
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
     },
   },
-  plugins: ["flowbite/plugin"],
+  plugins: [require("tailwindcss-animate")],
 };
